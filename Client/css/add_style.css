@@ -1,0 +1,918 @@
+#section {
+  min-height: 900px;
+}
+td {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/*ͨ����ʽ��*/
+.money {
+  margin-top: 20px;
+  border: solid 1px #dee2e7;
+  font-size: 16px;
+  background: white;
+}
+.money > p {
+  background-color: #f7f9fb !important;
+  font-size: 18px;
+  color: #504949;
+  padding-left: 60px;
+  height: 37px;
+  line-height: 37px;
+}
+.money .money_time {
+  background-color: white;
+  padding: 16px;
+  padding-bottom: 0;
+}
+.money .money_time ul,
+.money .money_time li {
+  overflow: hidden;
+}
+.money .money_time input {
+  width: 180px;
+  border: 1px solid #C6C6C6;
+  height: 26px;
+  line-height: 25px;
+  padding: 0;
+}
+.money .money_time > ul > li {
+  margin-bottom: 16px;
+}
+.money .money_time > ul > li > ul > li {
+  float: left;
+  margin-right: 30px;
+}
+.money .money_time > ul > li a {
+  background-color: #F4F4F4;
+  display: inline-block;
+  width: 85px;
+  height: 28px;
+  border-radius: 3px;
+  line-height: 28px;
+  text-align: center;
+  margin-right: 16px;
+  color: black;
+}
+.money .money_time select {
+  height: 26px;
+  width: 130px;
+}
+.money .money_time .money_time_type li {
+  cursor: pointer;
+  margin-right: 18px;
+  position: relative;
+}
+.money .money_time .money_time_type li em {
+  display: inline-block;
+  padding: 0 12px;
+  height: 31px;
+  line-height: 31px;
+}
+.money .money_time .money_time_type li b {
+  bottom: -10px;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  margin: 0;
+  background: url('../images/triangle.png') no-repeat center;
+  display: none;
+}
+.money .money_time .money_time_type li:hover,
+.money .money_time .money_time_type .active {
+  background-color: #ffa42f;
+  color: white;
+}
+.money .money_time .money_time_type li:hover b,
+.money .money_time .money_time_type .active b {
+  display: block;
+}
+.money .money_form {
+  border-top: 1px solid #dee2e7;
+  padding: 14px 16px;
+  color: #aaa;
+}
+.money .money_form table {
+  width: 1002px;
+  table-layout: fixed;
+}
+.money .money_form table td {
+  height: 28px;
+}
+.money .money_form table p {
+  display: inline-block;
+  color: black;
+}
+.money .money_form table b {
+  color: black;
+  font-weight: 500 !important;
+  margin-right: 5px;
+}
+.money .money_form table div {
+  display: inline;
+  float: right;
+}
+.money .money_form:hover {
+  background-color: #f6f6f6;
+  cursor: pointer;
+}
+.money .money_paging {
+  height: 55px;
+  padding-top: 18px;
+}
+.money .money_paging > ul {
+  text-align: center;
+}
+.money .money_paging > ul span,
+.money .money_paging > ul li {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  margin: 1px;
+  line-height: 25px;
+  cursor: pointer;
+}
+.money .money_paging > ul span img,
+.money .money_paging > ul li img {
+  margin: 2px 0 !important;
+  cursor: pointer;
+}
+.money .money_paging > ul li:hover {
+  background: #0f87e3;
+  color: white;
+}
+.money_get > .money > p {
+  background: url('../images/get.png') no-repeat 16px center;
+}
+.money_pay > .money > p {
+  background: url('../images/pay.png') no-repeat 16px center;
+}
+.money_cost > .money > p {
+  background: url('../images/cost.png') no-repeat 16px center;
+}
+.money_clear > .money > p {
+  background: url('../images/clear.png') no-repeat 16px center;
+}
+.money_getorder form > .money > p {
+  background: url('../images/getorder.png') no-repeat 16px center;
+}
+.money_getorder form > .money > div {
+  font-size: 14px;
+  padding: 10px 0px;
+  margin: 20px 35px;
+}
+.money_getorder form > .money > div > table {
+  width: 966px;
+  text-align: right;
+}
+.money_getorder form > .money > div > table tr {
+  height: 45px;
+}
+.money_getorder form > .money > div > table tr td {
+  padding-right: 10px;
+}
+.money_getorder form > .money > .money_getorder_goods {
+  margin: 0px;
+}
+.money_getorder form > .money .money_getorder_base input {
+  width: 145px;
+}
+.money_getorder form > .money .money_getorder_base select {
+  width: 266px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_head {
+  margin: 0px 25px 10px 25px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_head a,
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_foot a {
+  display: inline-block;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  margin-left: 10px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_add,
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_copy {
+  background: #ffa42f;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_fill,
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_remove {
+  background: #1A4165;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_foot {
+  padding: 0px 25px 10px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_foot .money_getorder_goods_copy,
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_foot .money_getorder_goods_remove {
+  font-size: 13px;
+  width: 70px ;
+  height: 25px;
+  line-height: 25px;
+  float: right;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_content {
+  background: #F4F4F4;
+  margin: 10px 5px;
+  position: relative;
+}
+.money_getorder form > .money .money_getorder_goods .goods_num {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background: #D1E0F5;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_item {
+  padding-top: 5px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_item input {
+  width: 70px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_item > div {
+  float: left;
+  text-align: right;
+  margin: 5px 0;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_item .goods_item_HS {
+  width: 250px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_item .goods_item_HS input {
+  width: 150px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_item .goods_item_CN {
+  width: 280px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_item .goods_item_CN input {
+  width: 200px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_item .goods_item_EN {
+  width: 280px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_item .goods_item_EN input {
+  width: 200px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_item .goods_item_PP {
+  width: 164px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_item .goods_item_PP input {
+  width: 115px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_item .goods_item_YCG {
+  width: 250px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_item .goods_item_YCG input {
+  width: 150px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_item .goods_item_SBYS {
+  width: 724px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_item .goods_item_SBYS input {
+  width: 644px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table {
+  border: 1px solid #aaa;
+  margin: 15px 25px 10px 25px;
+  background: #ECECEC;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_up,
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_down {
+  padding: 5px 0px 5px 13px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_up > div,
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_down > div {
+  float: left;
+  text-align: left;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_down {
+  background: white;
+  padding: 10px 0px 10px 13px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table input,
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table select {
+  margin-right: 5px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_SB-SD {
+  width: 185px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_SB-SD input {
+  width: 62px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_SB-SD select {
+  width: 104px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_price {
+  width: 95px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_price input {
+  width: 81px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_allprice {
+  width: 115px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_allprice input {
+  width: 101px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_FD-SD {
+  width: 185px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_FD-SD input {
+  width: 61px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_FD-SD select {
+  width: 104px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_BZ-SD {
+  width: 185px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_BZ-SD input {
+  width: 61px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_BZ-SD select {
+  width: 104px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_MZ,
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_JZ,
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_TJ {
+  width: 61px;
+}
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_MZ input,
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_JZ input,
+.money_getorder form > .money .money_getorder_goods .money_getorder_goods_table .goods_table_TJ input {
+  width: 52px;
+}
+.money_getorder form > .money .money_getorder_adjunct {
+  margin-top: 0;
+  padding: 0 10px;
+}
+.money_getorder form > .money .money_getorder_adjunct > a {
+  display: inline-block;
+  width: 80px;
+  padding-left: 24px;
+  background: url('../images/add.png') no-repeat left center;
+}
+.money_getorder form > .money .money_getorder_adjunct .getorder_adjunct_item {
+  margin-top: 20px;
+}
+.money_getorder form > .money .money_getorder_adjunct .getorder_adjunct_item input {
+  width: 175px;
+}
+.money_getorder form > .money .money_getorder_adjunct .getorder_adjunct_item > div {
+  float: left;
+  margin-right: 20px;
+}
+.money_getorder form > .money .money_getorder_adjunct .getorder_adjunct_item .getorder_adjunct_action a {
+  color: #1C8AEA;
+}
+.money_getorder .money_getorder_foreign .getorder_foreign_name {
+  width: 580px;
+}
+.money_getorder .money_getorder_foreign .getorder_foreign_country {
+  width: 170px;
+}
+.money_getorder .money_getorder_foreign .getorder_foreign_address {
+  width: 582px;
+  height: 70px;
+  text-align: left;
+}
+.money_getorder .money_getorder_foreign .getorder_foreign_phone,
+.money_getorder .money_getorder_foreign .getorder_foreign_fax {
+  width: 170px;
+}
+.money_getorder .money_getorder_foreign .money_getorder_base > table {
+  width: 956px;
+}
+.money_getorder .money_getorder_save {
+  display: block;
+  width: 110px;
+  height: 30px;
+  background: #ffa42f;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 auto;
+}
+.money_getorder .money_getorder_bg,
+.money_getorder .money_getorder_bggoods {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 794px;
+  height: 500px;
+  padding: 12px;
+  background-color: white;
+  z-index: 1002;
+  margin-left: -377px !important;
+  margin-top: -250px !important;
+}
+.money_getorder .money_getorder_bg > p,
+.money_getorder .money_getorder_bggoods > p {
+  font-size: 16px;
+}
+.money_getorder .money_getorder_bg > a,
+.money_getorder .money_getorder_bggoods > a {
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url('../images/bgshow_close.png') no-repeat right center;
+}
+.money_getorder .money_getorder_bg .getorder_bggoods,
+.money_getorder .money_getorder_bggoods .getorder_bggoods {
+  overflow: auto;
+  width: 794px;
+  height: 460px;
+  margin-top: 10px;
+}
+.money_getorder .money_getorder_bg .getorder_bggoods_table,
+.money_getorder .money_getorder_bggoods .getorder_bggoods_table {
+  text-align: center;
+  margin: 20px 0;
+}
+.money_getorder .money_getorder_bg .getorder_bggoods_table > div > div,
+.money_getorder .money_getorder_bggoods .getorder_bggoods_table > div > div {
+  width: 120px;
+  float: left;
+}
+.money_getorder .money_getorder_bg .getorder_bggoods_table .getorder_bggoods_head > div,
+.money_getorder .money_getorder_bggoods .getorder_bggoods_table .getorder_bggoods_head > div {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  border: 1px solid #dee2e7;
+}
+.money_getorder .money_getorder_bg .getorder_bggoods_table .getorder_bggoods_body > div,
+.money_getorder .money_getorder_bggoods .getorder_bggoods_table .getorder_bggoods_body > div {
+  border: 1px solid #dee2e7;
+  border-top: none;
+  height: 310px;
+  font-size: 14px;
+}
+.money_getorder .money_getorder_bg .getorder_bggoods_table .getorder_bggoods_body > div input,
+.money_getorder .money_getorder_bggoods .getorder_bggoods_table .getorder_bggoods_body > div input,
+.money_getorder .money_getorder_bg .getorder_bggoods_table .getorder_bggoods_body > div select,
+.money_getorder .money_getorder_bggoods .getorder_bggoods_table .getorder_bggoods_body > div select {
+  width: 229px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.money_getorder .money_getorder_bg .getorder_bggoods_table .getorder_bggoods_body > div select,
+.money_getorder .money_getorder_bggoods .getorder_bggoods_table .getorder_bggoods_body > div select {
+  width: 233px;
+}
+.money_getorder .money_getorder_bg .getorder_bggoods_table .getorder_bggoods_body > div > div,
+.money_getorder .money_getorder_bggoods .getorder_bggoods_table .getorder_bggoods_body > div > div {
+  height: 21px;
+  float: left;
+  display: table-cell;
+  margin: 10px 16px;
+}
+.money_getorder .money_getorder_bg .getorder_bggoods_table .getorder_bggoods_item,
+.money_getorder .money_getorder_bggoods .getorder_bggoods_table .getorder_bggoods_item {
+  width: 470px;
+}
+.money_getorder .money_getorder_bg .getorder_bggoods_table .getorder_bggoods_item span,
+.money_getorder .money_getorder_bggoods .getorder_bggoods_table .getorder_bggoods_item span {
+  word-break: normal;
+  display: inline-block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow: hidden ;
+  vertical-align: middle;
+  text-align: right;
+}
+.money_getorder .money_getorder_bg .getorder_bggoods_table .getorder_bggoods_item .getorder_bggoods_ZL,
+.money_getorder .money_getorder_bggoods .getorder_bggoods_table .getorder_bggoods_item .getorder_bggoods_ZL {
+  height: 40px;
+}
+.money_getorder .money_getorder_bg .getorder_bggoods_table .getorder_bggoods_type,
+.money_getorder .money_getorder_bggoods .getorder_bggoods_table .getorder_bggoods_type {
+  border-left: none !important;
+  border-right: none!important;
+  width: 170px;
+}
+.money_order > .money > p {
+  background: url('../images/order.png') no-repeat 16px center;
+}
+.money_pass > .money > p {
+  background: url('../images/pass.png') no-repeat 16px center;
+}
+.money2 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+.money2 .money_line {
+  margin: 30px 30px;
+}
+.money2 .money_pass_Advance {
+  margin: 20px 20px;
+  width: 994px;
+  border: 1px solid #CACACA;
+}
+.money2 .money_pass_Advance thead {
+  border-bottom: 1px solid #CACACA;
+}
+.money2 .money_pass_Advance thead > tr {
+  height: 50px;
+}
+.money2 .money_pass_Advance tbody > tr {
+  border-bottom: 1px dotted #CACACA;
+  height: 35px;
+}
+.money2 .money_pass_Advance tfoot > tr {
+  height: 50px;
+}
+.money2 .money_pass_list {
+  border-bottom: 1px solid #CACACA;
+}
+.money2 .money_pass_list tr > td {
+  height: 32px;
+}
+.money_alert > .money > p {
+  background: url('../images/alert.png') no-repeat 16px center;
+}
+.money_message .bgmessage > p {
+  margin: 10px;
+  font-size: 16px;
+}
+.money_message .bgmessage .bgmessage_head {
+  text-align: center;
+}
+.money_message .bgmessage .bgmessage_head p {
+  font-size: 18px !important;
+}
+.money_message .bgmessage .bgmessage_head .bgmessage_title {
+  color: #aaa;
+}
+.money_message .bgmessage .bgmessage_head .bgmessage_title span {
+  font-size: 14px;
+  margin: 0 3em;
+}
+.money_message .bgmessage .bgmessage_boby {
+  text-indent: 2em;
+  font-size: 16px;
+}
+.money_message .money_message_list_handle {
+  position: relative;
+  text-align: center;
+  height: 70px;
+  width: 135px !important;
+  background: #B6B6B6;
+  color: white;
+  cursor: pointer;
+}
+.money_message .money_message_list_handle > ul {
+  position: absolute;
+  top: 10px;
+  width: 135px;
+}
+.money_message .money_message_list_handle > ul .money_message_list_look {
+  height: 30px;
+  line-height: 40px;
+  background: url('../images/sanjiao.png') no-repeat 88px 18px;
+}
+.money_message .money_message_list_handle > ul .money_message_list_remove {
+  height: 30px;
+  line-height: 30px;
+  display: none;
+}
+.money_message .money_message_list_handle:hover {
+  background: #ffa42f;
+}
+.money_message .money_message_list_handle > ul:hover .money_message_list_remove {
+  display: block;
+}
+.money_message > .money > p {
+  background: url('../images/message.png') no-repeat 16px center;
+}
+.money_message > .money .money_time_type > li > em {
+  padding: 0 35px;
+}
+.money_message > .money .money_time ul > li > ul > li div {
+  display: inline-block;
+}
+.money_message > .money .money_time ul > li > ul > li div a {
+  border-radius: 0 3px 3px 0;
+}
+.money_message > .money .money_time ul > li > ul > li div input {
+  float: left;
+  border-right: none;
+  width: 280px;
+}
+.money_message > .money .money_form {
+  border: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.money_message > .money .money_form table {
+  background: #f6f6f6;
+  width: 1034px;
+}
+.money_message > .money .money_form table tr {
+  /*a{display: inline-block;height:74px;width: 136px;color:white;background:#aaa;text-align: center;}*/
+}
+.money_message > .money .money_form table tr td {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.money_message > .money .money_form table tr p {
+  height: 48px;
+  line-height: 48px;
+  background: url('../images/inform_s.png') no-repeat 16px center;
+}
+.money_message > .money .money_form table tr h4 {
+  color: black;
+}
+.money_message > .money .money_form table tr div {
+  width: 184px;
+}
+.money_message > .money .money_form table tr span {
+  margin-right: 40px;
+}
+.money_message > .money .money_form table a:hover {
+  background: #ffa42f;
+}
+.money_message > .money .money_form:hover {
+  background-color: transparent;
+  cursor: default;
+}
+.money_message > .money > div > table {
+  width: 1034px;
+}
+.money_message > .money > div > table tr {
+  vertical-align: middle;
+}
+.money_message > .money > div > table tr span {
+  font-size: 12px;
+  height: 12px;
+  line-height: 12px;
+}
+.money_message > .money > div > table tr span input {
+  vertical-align: -2px;
+}
+.money_message > .money > div > table tr td {
+  text-align: center;
+  padding: 10px 0;
+}
+.money_account > .money > p {
+  background: url('../images/account.png') no-repeat 16px center;
+}
+.money_account > .money .money_time_type > li > em {
+  padding: 0 35px;
+}
+.money_account > .money ul,
+.money_account > .money li {
+  overflow: visible !important;
+}
+.money_account > .money .money_account_four {
+  min-height: 700px;
+}
+.money_account > .money .money_account_four form {
+  margin: 40px 0;
+}
+.money_account > .money .money_account_four p {
+  margin: 10px auto;
+  width: 597px;
+}
+.money_account > .money .money_account_four label {
+  width: 100px;
+  text-align: right;
+  display: inline-block;
+}
+.money_account > .money .money_account_four i {
+  font-style: normal;
+  margin: 0 5px;
+  color: #F91917;
+}
+.money_account > .money .money_account_four span {
+  font-size: 14px;
+}
+.money_account > .money .money_account_four input {
+  width: 220px;
+}
+.money_account > .money .money_account_four .money_account_user > div {
+  padding: 10px 50px 20px 50px;
+}
+.money_account > .money .money_account_four .money_account_user > table {
+  width: 1034px;
+  table-layout: fixed;
+}
+.money_account > .money .money_account_four .money_account_user > table td {
+  width: 20%;
+  text-align: center;
+}
+.money_account > .money .money_account_four .money_account_user > table td input {
+  width: 13px;
+}
+.money_account > .money .money_account_four .money_account_user > table td label {
+  width: 35px;
+}
+.money_account > .money .money_account_four .money_account_user > table thead {
+  background-color: #F7F9FB;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+.money_account > .money .money_account_four .money_account_user .money_account_user_inform {
+  float: left;
+  padding-left: 85px;
+  background: url('../images/inform_s.png') no-repeat left center;
+  height: 59px;
+  line-height: 59px;
+  font-size: 25px;
+}
+.money_account > .money .money_account_four .money_account_user .money_account_user_add,
+.money_account > .money .money_account_four .money_account_user .money_account_user_remove {
+  float: right;
+  cursor: pointer;
+  padding-left: 25px;
+  margin-left: 5px;
+  height: 59px;
+  line-height: 59px;
+}
+.money_account > .money .money_account_four .money_account_user .money_account_user_add {
+  background: url('../images/add.png') no-repeat left center;
+}
+.money_account > .money .money_account_four .money_account_user .money_account_user_remove {
+  background: url('../images/remove.png') no-repeat left center;
+}
+.money_account > .money .money_account_four .money_account_user .money_account_useradd > form {
+  padding-top: 30px;
+}
+.money_account > .money .money_account_four .money_account_serve table {
+  width: 1034px;
+  text-align: center;
+}
+.money_account > .money .money_account_four .money_account_serve table td {
+  width: 344px;
+  padding: 10px 0;
+}
+.money_account > .money .money_account_four .money_account_serve table thead {
+  background-color: #F2F6FF;
+}
+.money_account > .money .money_account_four .money_account_serve table thead tr {
+  border-top: 1px solid #fff;
+}
+.money_account > .money .money_account_four .money_account_serve table a {
+  color: white;
+  background: #ffa42f;
+  width: 100px;
+  display: inline-block;
+  padding: 5px 0;
+}
+.money_account > .money .money_account_four .money_account_serve table .active {
+  background: #D1D1D1;
+}
+/*  --��ɫ����class--  */
+.color-bg-blue {
+  color: #FFF;
+  background-color: #5B7995;
+}
+.color-bg-yellow {
+  background-color: #ffa42f !important;
+}
+.color-red {
+  color: #fa0707 !important;
+}
+.color-b-blue {
+  background: #0f87e3;
+  color: white;
+}
+.color-deepblue {
+  color: #0D365E;
+}
+.color-yellow {
+  color: #ffa42f !important;
+}
+.clearhidden {
+  overflow: visible !important;
+}
+/* --����overflow���ش�����Ӱ�� ʹ��λ��ʾ-- */
+.money_alert .money_time ul,
+li,
+.money_message .money_time ul,
+li {
+  overflow: visible !important;
+}
+/* --ģ̬�򱳾�-- */
+.bg {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.7;
+  opacity: .70;
+  filter: alpha(opacity=70);
+}
+.bgshow,
+.bgmessage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 630px;
+  height: 350px;
+  padding: 10px;
+  background-color: white;
+  z-index: 1002;
+  margin-left: -325px !important;
+  margin-top: -200px !important;
+}
+.bgshow a,
+.bgmessage a {
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url('../images/bgshow_close.png') no-repeat right center;
+}
+/* --�ָ�����-- */
+.money_line {
+  border-top: 1px dotted #ffa42f;
+  position: relative;
+  padding: 1px 0 !important;
+  color: #ffa42f;
+}
+.money_line .getorder_line_title {
+  position: absolute;
+  background: white;
+  padding: 0 5px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  top: -15px;
+  left: 440px;
+  font-size: 16px;
+}
+.state1 {
+  color: #aaa ;
+}
+.state2 {
+  color: #000 ;
+}
+.state3 {
+  color: red ;
+  background: url('../images/alert_error.png') no-repeat left 60%;
+  padding-left: 14px;
+}
+.state4 {
+  color: green ;
+  background: url('../images/alert_right.png') no-repeat left 60%;
+  padding-left: 14px;
+}
+.danger {
+  border: 1px solid #e4393c;
+}
+.w180 {
+  width: 180px;
+}
+.w10 {
+  width: 10px;
+  text-align: center !important;
+}
+.money3 > .money_line {
+  margin: 45px 15px;
+  width: 1004px;
+}
+.money3 .money3_line_CKSPMX {
+  left: 408px !important;
+}
+.money3 .money3_line_SDYHMX {
+  left: 424px !important;
+}
+.money3 .money3_line_GKDKQK {
+  left: 460px !important;
+}
+.money3 table {
+  margin: 20px 20px;
+  width: 994px;
+  font-size: 14px;
+  border: 1px solid #CACACA;
+}
+.money3 table tr {
+  height: 40px;
+}
+.money3 table thead > tr {
+  height: 50px;
+}
+.money3 table thead > tr div {
+  margin: 0 20px;
+}
+.money3 table tbody td {
+  border-right: 1px solid #dee2e7;
+  border-left: 1px solid #dee2e7;
+  text-align: center;
+}

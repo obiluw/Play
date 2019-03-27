@@ -1,0 +1,414 @@
+#section{min-height: 900px  }
+td{overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+/*通用样式表*/
+.money{
+  margin-top: 20px;
+  border: solid 1px #dee2e7;
+  font-size: 16px;
+  background:white;
+  >p{
+    background-color: #f7f9fb !important;
+    font-size: 18px;
+    color: #504949;
+    padding-left: 60px;
+    height: 37px;
+    line-height: 37px;
+  }
+  .money_time{
+    ul,li{overflow: hidden}
+    background-color: white;
+    padding:16px;
+    padding-bottom:0;
+    input{width:180px;border:1px solid #C6C6C6;height:26px;line-height:25px;padding:0;}
+    >ul>li{
+      margin-bottom: 16px;
+      >ul>li{float:left;margin-right:30px;}
+      a{
+        background-color:  #F4F4F4;
+        display: inline-block ;
+        width:85px;
+        height:28px;
+        border-radius: 3px;
+        line-height:28px;
+        text-align: center;
+        margin-right:16px;
+        color:black;
+      }
+    }
+    select{height: 26px;width:130px;}
+    .money_time_type li{
+      cursor: pointer;
+      margin-right:18px;
+      position: relative;
+      em{
+        display:inline-block;
+        padding:0 12px;
+        height:31px;
+        line-height:31px;
+      }
+    }
+    .money_time_type li b{
+      bottom:-10px;
+      width:100%;
+      height:10px;
+      position: absolute;
+      margin:0;
+      background: url('../images/triangle.png') no-repeat  center;
+      display:none;
+    }
+    .money_time_type li:hover,.money_time_type .active {
+      background-color:#ffa42f;
+      color:white;
+      b{display:block;}
+    }
+  }
+  .money_form{
+    border-top: 1px solid #dee2e7;
+    padding:14px 16px;
+    color:#aaa;
+    table{
+      width:1002px;table-layout: fixed;
+      td{height: 28px;}
+      p{display:inline-block;color:black}
+      b{color:black; font-weight: 500 !important;margin-right:5px;}
+      div{display: inline;float: right;}
+    }
+  }
+  .money_form:hover{
+    background-color: #f6f6f6;
+    cursor: pointer;
+  }
+  .money_paging{
+    height:55px;
+    padding-top:18px;
+    >ul{
+      text-align: center;
+      span,li{
+        border:1px solid #ddd;
+        border-radius: 3px;
+        height:25px;
+        width:25px;
+        display: inline-block;
+        margin:1px;
+        line-height: 25px;
+        cursor: pointer;
+        img{
+          margin:2px 0 !important;
+          cursor: pointer;
+        }
+      }
+      li:hover{
+        background:#0f87e3;
+        color:white;
+      }
+    }
+  }
+}
+
+
+
+//每个页面的背景图
+.money_get>.money>p{
+  background: url('../images/get.png') no-repeat 16px center;
+}
+.money_pay>.money>p{
+  background: url('../images/pay.png') no-repeat 16px center;
+}
+.money_cost>.money>p{
+  background: url('../images/cost.png') no-repeat 16px center;
+}
+.money_clear>.money>p{
+  background: url('../images/clear.png') no-repeat 16px center;
+}
+
+.money_getorder{
+  form>.money{
+    >p{
+      background: url('../images/getorder.png') no-repeat 16px center;
+    }
+    >div{
+      font-size:14px;padding:10px 0px;margin:20px 35px;
+      >table{width:966px; text-align: right;tr{height:45px;td{padding-right:10px;}}}
+    }
+    >.money_getorder_goods{margin:0px;}
+    .money_getorder_base{input{width:145px;}select{width:266px;}}
+    .money_getorder_goods{
+      .money_getorder_goods_head{margin: 0px 25px 10px 25px;}
+      .money_getorder_goods_head a,.money_getorder_goods_foot a{display:inline-block;border-radius: 5px;width:100px;height:30px;line-height:30px;text-align: center;color:white;margin-left:10px;}
+      .money_getorder_goods_add,.money_getorder_goods_copy{background:#ffa42f}
+      .money_getorder_goods_fill,.money_getorder_goods_remove{background:#1A4165}
+      .money_getorder_goods_foot{
+        padding: 0px 25px 10px;
+        .money_getorder_goods_copy,.money_getorder_goods_remove{
+          font-size:13px;width: 70px ; height:25px;line-height: 25px;float:right}
+      }
+      .money_getorder_goods_content{background:#F4F4F4;margin:10px 5px;position: relative}
+      .goods_num{position: absolute;width:25px;height:25px;line-height: 25px;text-align: center;background: #D1E0F5}
+      .money_getorder_goods_item{
+        padding-top:5px;
+        input{width:70px;}
+        >div{float:left;text-align: right;margin:5px 0;}
+        .goods_item_HS{width:250px;input{width:150px;}}
+        .goods_item_CN{width:280px;input{width:200px;}}
+        .goods_item_EN{width:280px;input{width:200px;}}
+        .goods_item_PP{width:164px;input{width:115px;}}
+        .goods_item_YCG{width:250px;input{width:150px;}}
+        .goods_item_SBYS{width:724px;input{width:644px;}}
+      }
+      .money_getorder_goods_table{
+         border:1px solid #aaa;margin:15px 25px 10px 25px;background:#ECECEC;
+         .goods_table_up,.goods_table_down{
+           padding:5px 0px 5px 13px;>div{float:left;text-align: left;}
+         }
+         .goods_table_down{background:white;padding:10px 0px 10px 13px;}
+         input,select{margin-right:5px;}
+         .goods_table_SB-SD{width:185px;input{width:62px}select{width:104px;}}
+         .goods_table_price{width:95px;input{width:81px}}
+         .goods_table_allprice{width:115px;input{width:101px}}
+         .goods_table_FD-SD{width:185px;input{width:61px}select{width:104px;}}
+         .goods_table_BZ-SD{width:185px;input{width:61px}select{width:104px;}}
+         .goods_table_MZ,.goods_table_JZ,.goods_table_TJ{width:61px;input{width:52px}}
+       }
+    }
+    .money_getorder_adjunct{
+      margin-top:0;padding:0 10px;
+      >a{display: inline-block;width:80px;padding-left:24px;  background: url('../images/add.png') no-repeat left center;}
+      .getorder_adjunct_item{
+        margin-top:20px;
+        input{width:175px;}
+        >div{float:left;margin-right:20px;}
+        .getorder_adjunct_action{a{color:#1C8AEA}}
+      }
+    }
+  }
+  .money_getorder_foreign{
+    .getorder_foreign_name{width:580px}
+    .getorder_foreign_country{width:170px}
+    .getorder_foreign_address{width:582px;height:70px;text-align:left}
+    .getorder_foreign_phone,.getorder_foreign_fax{width:170px}
+    .money_getorder_base{>table{width:956px;}}
+
+
+  }
+  .money_getorder_save{display: block;width:110px;height:30px;background: #ffa42f;border-radius: 5px;color:white;font-size: 16px;text-align: center;line-height: 30px;margin:0 auto;}
+  .money_getorder_bg,.money_getorder_bggoods{>p{font-size: 16px;};position: fixed;  top: 50%;  left: 50%;  width: 794px;  height: 500px;  padding: 12px;  background-color: white;  z-index:1002;  margin-left:-377px !important;margin-top: -250px!important; >a{position: absolute;right:5px;top:2px;display:inline-block;width:32px;height:32px;background: url('../images/bgshow_close.png') no-repeat right center;}
+    .getorder_bggoods{overflow: auto;width: 794px;height: 460px;margin-top: 10px}
+    .getorder_bggoods_table{
+      text-align: center;
+      margin:20px 0;
+      >div>div{width:120px;float:left;}
+      .getorder_bggoods_head{>div{height:40px;line-height: 40px;font-size: 16px;border:1px solid #dee2e7;}}
+      .getorder_bggoods_body{>div{border:1px solid #dee2e7;border-top:none;height:310px;font-size: 14px;input,select{width:229px;vertical-align:middle;display: inline-block; };select{width:233px;};>div{height:21px;float:left;display:table-cell;margin:10px 16px;}}}
+      .getorder_bggoods_item{
+        width:470px;span{word-break:normal; display:inline-block; white-space:pre-wrap;word-wrap : break-word ;overflow: hidden ;vertical-align: middle;text-align: right}
+        .getorder_bggoods_ZL{height:40px}
+      }
+      .getorder_bggoods_type{border-left:none !important;border-right:none!important;width:170px;}
+    }
+  }
+}
+
+.money_order>.money>p{
+  background: url('../images/order.png') no-repeat 16px center;
+}
+.money_pass>.money>p{
+  background: url('../images/pass.png') no-repeat 16px center;
+  }
+.money2{
+  font-size: 14px;
+  padding-bottom: 20px;
+  .money_line{margin:30px 30px;}
+  .money_pass_Advance{
+    margin:20px 20px;width:994px;border:1px solid #CACACA;
+    thead{border-bottom:1px solid #CACACA;>tr{height:50px;}}
+    tbody>tr{border-bottom:1px dotted #CACACA;height:35px;}
+    tfoot>tr{height:50px;}
+  }
+  .money_pass_list{
+    border-bottom: 1px solid #CACACA;
+    tr>td{height:32px;}
+  }
+}
+
+
+.money_alert>.money>p{
+  background: url('../images/alert.png') no-repeat 16px center;
+}
+.money_message{
+  .bgmessage{
+    >p{margin:10px;font-size: 16px;}
+    .bgmessage_head{
+      text-align: center;
+      p{font-size: 18px !important;}
+      .bgmessage_title{
+        color:#aaa;
+        span{font-size: 14px;margin:0 3em;}
+      }
+    }
+    .bgmessage_boby{
+      text-indent: 2em;
+      font-size: 16px;
+    }
+  }
+  .money_message_list_handle{
+      position: relative;text-align: center;height:70px;width:135px !important;background:#B6B6B6;color:white;cursor: pointer;
+    >ul{
+      position: absolute;top:10px;width:135px;
+      .money_message_list_look{height:30px;line-height:40px;background: url('../images/sanjiao.png') no-repeat 88px 18px;}
+      .money_message_list_remove{height:30px;line-height:30px;display:none}
+    }
+  }
+  .money_message_list_handle:hover{background:#ffa42f;}
+  .money_message_list_handle>ul:hover{.money_message_list_remove{display:block}}
+  >.money{
+    >p{
+      background: url('../images/message.png') no-repeat 16px center;
+    }
+    .money_time_type>li>em{padding:0 35px;}
+    .money_time ul>li>ul>li{
+      div{
+        display:inline-block;
+        a{border-radius:0 3px 3px 0}
+        input{float: left;border-right: none;width:280px;}
+      }
+    }
+    .money_form{
+      border: none;padding:0;margin-bottom: 20px;
+      table {
+        background: #f6f6f6;width: 1034px;
+        tr{
+          td{ white-space: nowrap; text-overflow: ellipsis;}
+          p{height:48px;line-height: 48px;background: url('../images/inform_s.png') no-repeat 16px center;}
+          h4{color:black;}
+          div{width:184px;}
+          span{margin-right:40px;}
+          /*a{display: inline-block;height:74px;width: 136px;color:white;background:#aaa;text-align: center;}*/
+        }
+        a:hover{background: #ffa42f;}
+      }
+    }
+    .money_form:hover {background-color: transparent; cursor:default }
+    >div>table{width:1034px;
+      tr{vertical-align: middle;span{font-size: 12px;height:12px;line-height:12px;input{vertical-align:-2px}}td{text-align: center;padding:10px 0}}
+    }
+  }
+}
+
+.money_account{
+  >.money {
+    > p {
+      background: url('../images/account.png') no-repeat 16px center;
+    }
+    .money_time_type>li>em{padding:0 35px;}
+    ul,li{overflow: visible !important;}
+    .money_account_four{
+      min-height: 700px;
+      form{margin:40px 0;}
+      p{margin:10px auto;width:597px;}
+      label{width:100px;text-align: right;display:inline-block;}
+      i{font-style:normal;margin:0 5px;color:#F91917;}
+      span{font-size: 14px;}
+      input{width:220px;}
+      .money_account_user{
+        >div{padding:10px 50px 20px 50px;}
+        >table{width:1034px;table-layout:fixed;td{width:20%;text-align: center;input{width:13px;}label{width:35px}};thead{background-color: #F7F9FB;border-bottom:1px solid #ddd;border-top:1px solid #ddd}}
+        .money_account_user_inform{float:left;padding-left:85px;background: url('../images/inform_s.png') no-repeat left center;height:59px;line-height: 59px;
+          font-size:25px;}
+        .money_account_user_add,.money_account_user_remove{
+          float:right;cursor: pointer;padding-left:25px;margin-left:5px;
+          height:59px;line-height: 59px
+        }
+        .money_account_user_add{background: url('../images/add.png') no-repeat left center;}
+        .money_account_user_remove{background: url('../images/remove.png') no-repeat left center;}
+        .money_account_useradd>form{padding-top:30px;}
+      }
+      .money_account_serve{
+        table{
+          width:1034px;text-align: center;
+          td{width:344px;padding:10px 0;}
+          thead{background-color: #F2F6FF;tr{border-top:1px solid #fff}}
+          a{color:white;background: #ffa42f;width:100px;display: inline-block;padding:5px 0;}
+          .active{background:#D1D1D1}
+        }
+      }
+    }
+  }
+}
+
+/*  --颜色背景class--  */
+.color-bg-blue{
+  color: #FFF;
+  background-color: #5B7995;
+}
+.color-bg-yellow{
+  background-color:#ffa42f !important;
+}
+.color-red{
+  color:#fa0707 !important;
+}
+.color-b-blue{
+  background:#0f87e3;
+  color:white;
+}
+.color-deepblue{
+  color:#0D365E;
+}
+.color-yellow{
+  color:#ffa42f !important;
+}
+.clearhidden{
+  overflow: visible !important;
+}
+/* --清除overflow隐藏带来的影响 使定位显示-- */
+.money_alert .money_time ul,li , .money_message .money_time ul,li{
+  overflow: visible !important;
+}
+/* --模态框背景-- */
+.bg{  position: fixed;  top: 0%;  left: 0%;  width: 100%;  height: 100%;  background-color: black;  z-index:1001;  -moz-opacity: 0.7;  opacity:.70;  filter: alpha(opacity=70);}
+.bgshow,.bgmessage{
+  position: fixed;  top: 50%;  left: 50%;  width: 630px;  height: 350px;  padding: 10px;  background-color: white;  z-index:1002;  margin-left:-325px !important;margin-top: -200px!important; a{position: absolute;right:5px;top:2px;display:inline-block;width:32px;height:32px;background: url('../images/bgshow_close.png') no-repeat right center;}
+}
+/* --分割黄线-- */
+.money_line{
+  border-top:1px dotted #ffa42f;position: relative;padding: 1px 0 !important;color:#ffa42f;
+  .getorder_line_title{position: absolute;background: white;padding:0 5px;height:30px;line-height:30px;text-align:center;top:-15px;left:440px;font-size: 16px; }
+}
+
+.state1{
+  color:#aaa ;
+}
+.state2{
+  color:#000 ;
+}
+.state3{
+  color:red ;
+  background: url('../images/alert_error.png') no-repeat left 60%;
+  padding-left:14px;
+}
+.state4{
+  color:green ;
+  background: url('../images/alert_right.png') no-repeat left 60%;
+  padding-left:14px;
+}
+.danger{
+  border:1px solid #e4393c;
+}
+.w180{width:180px}
+.w10{width:10px;text-align: center !important;}
+
+//结算单详情
+.money3{
+  >.money_line{margin:45px 15px;width:1004px;}
+  .money3_line_CKSPMX{left:408px !important;}
+  .money3_line_SDYHMX{left:424px !important;}
+  .money3_line_GKDKQK{left:460px !important;}
+}
+.money3 table{
+  margin: 20px 20px;
+  width: 994px;
+  tr{height:40px;}
+  thead>tr{height:50px;div{margin:0 20px;}}
+  font-size:14px;
+  border: 1px solid #CACACA;
+  tbody{td{border-right: 1px solid #dee2e7;border-left: 1px solid #dee2e7;text-align: center;}}
+}
