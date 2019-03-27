@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8">
+	<link rel="stylesheet" href="2048.css"/>
+	<script src="2048.js"></script>
+ </head>
+ <body>
+	<p>
+		Score:<span id="score">0</span>
+		&nbsp;&nbsp;&nbsp;
+		Top:<span id="top1">0</span>
+	</p>
+  <div id="gridPanel">
+		
+	</div>
+	<div id="gameOver">
+		<div><!--背景div--></div>
+		<p><!--前景弹出窗口-->
+			Game Over!<br>
+			Score:<span id="finalScore"></span><br>
+			<a class="button" onclick="game.start()">
+				Try again!
+			</a>
+		</p>
+	</div>
+ </body>
+</html>
